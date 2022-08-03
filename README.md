@@ -469,7 +469,7 @@ In existing type systems, function/method declarations may omit their body.
 This is used for [function overloading](https://www.typescriptlang.org/docs/handbook/functions.html#overloads), which communicates that the return type of a function varies with its inputs.
 
 ```ts
-function foo(x: number): number
+function foo(x: number): number;
 function foo(x: string): string;
 function foo(x: string | number): string | number {
     if (typeof x === number) {
